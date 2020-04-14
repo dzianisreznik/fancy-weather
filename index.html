@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <title>dom</title>
+<link href="main.css" rel="stylesheet"></head>
+
+<body>
+    <header class="header">
+        <div class="header__buttons">
+            <button id="refresh" class="refresh">o</button>
+            <select id="languageSelect">
+                <option value="EN">EN</option>
+                <option value="RU">RU</option>
+            </select>
+
+            <div class="select">
+                <div class="select__label select__item" id="selectLabel"></div>
+                <div class="select__options hidden" id="selectOptions"></div>
+            </div>
+
+            <label for="celsius" class="unit__label" id="celsiusLabel">C</label>
+            <input type="radio" name="unit" value="C" id="celsius">
+            <label for="fahrenheit" class="unit__label" id="fahrenheitLabel">F</label>
+            <input type="radio" name="unit" value="F" id="fahrenheit">
+        </div>
+        <div class="header__search-panel">
+            <input type="text" id="searchInput">
+            <button id="searchButton"></button>
+        </div>
+    </header>
+    <main class="main">
+        <div class="weather">
+            <div class="weather__header">
+                <div class="weather__location" id="location">
+                    
+                </div>
+                <div class="weather__time" id="date">
+                    
+                </div>
+            </div>
+            <div class="weather__now">
+                <div class="weather__degrees">
+                    <span id="degreesNow"></span>°
+                </div>
+                <div class="weather__overcast">
+                    <div id="overcast"></div>
+                    <div> <span id="feelsLikeLabel"></span><span id="feelsLike"></span>°</div>
+                    <div> <span id="windLabel"></span><span id="wind"></span></div>
+                    <div> <span id="humidityLabel"></span><span id="humidity"></span> %</div>
+                </div>
+            </div>
+            <div class="weather__forecast forecast">
+                <div class="forecast__item" id="forecast0">
+                    <span class="forecast__weekday"></span>
+                    <div><span class="forecast__degrees"></span>°</div>
+                </div>
+                <div class="forecast__item" id="forecast1">
+                    <span class="forecast__weekday"></span>
+                    <div><span class="forecast__degrees"></span>°</div>
+                </div>
+                <div class="forecast__item" id="forecast2">
+                    <span class="forecast__weekday"></span>
+                    <div><span class="forecast__degrees"></span>°</div>
+                </div>
+            </div>
+        </div>
+        <div class="map" id="map">
+
+        </div>
+    </main>
+<script type="text/javascript" src="74d2d479d6882e4e6db9.bundle.js"></script></body>
+
+</html>
